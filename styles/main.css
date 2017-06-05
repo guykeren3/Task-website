@@ -1,0 +1,228 @@
+/*Box sizing*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*Font strategy*/
+
+html,
+body {
+  font: 100% 'Lato', sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+
+.main-menu > ul > li {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+/*Global a attributes*/
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: #3d3d3d;
+  font-weight: 300;
+}
+
+a:focus,
+a:hover,
+a:active {
+  color: #F14848;
+  outline: none;
+}
+
+.header {
+  display: flex;
+  height: 100px;
+  /*outline: 1px solid red;*/
+  position: relative;
+  align-items: flex-end;
+  background-color: darkgrey;
+  justify-content: center;
+}
+
+.site-logo {
+  transform: scale(.7);
+  position: absolute;
+  left: 0;
+  bottom: -7%;
+}
+
+.contact {
+  outline: 1px solid red;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+.location-in-site-links {
+  background-color: lightgrey;
+  height: 30px;
+  position: relative;
+  padding-left: 2%;
+  padding-top: 5px;
+  width: 100%;
+}
+
+.house-icon {
+  transform: scale(.7);
+  position: absolute;
+  top: 1px;
+  left: 2px;
+}
+
+.main-pic-container {
+  position: relative;
+  height: 200vw;
+  outline: 1px solid red;
+  background-image: url(../assets/trabajo-img.png);
+  background-repeat: no-repeat;
+}
+
+.main-pic-container h1 {
+  color: white;
+  margin: 0;
+  margin-left: 50px;
+  position: absolute;
+  left: 100px;
+  top: 200px;
+}
+
+.chat-window {
+  outline: 1px solid red;
+  height: 40vw;
+  width: 15%;
+  background-color: rgba(250, 250, 250, .7);
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.options-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.chat-window-person {
+  display: block;
+  width: 90%;
+  transform: scale(.8);
+  padding-left: 10%;
+}
+
+.person-name {
+  margin: 0 auto;
+  color: red;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+.chat-window-options {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.chat-window-options li {
+  border-top: 1px solid lightgrey;
+  vertical-align: middle;
+  position: relative;
+}
+
+.chat-window-options li a {
+  padding-left: 2%;
+  padding-bottom: 8%;
+  padding-top: 7%;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  /*outline: 1px solid red;*/
+}
+
+.chat-window-options li a:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.chat-window-options li a img {
+  display: inline-block;
+  transform: scale(.6);
+  float: left;
+  padding-right: 5%;
+}
+
+.map-option-wrapper {
+  width: 50%;
+  display: inline-block;
+}
+
+.options-maps-btn {
+  display: flex;
+  background: none;
+  border: 1px solid red;
+  color: red;
+  position: absolute;
+  bottom: -45%;
+  right: 17%;
+  cursor: pointer;
+}
+
+/*HELPERS*/
+
+.caps {
+  text-transform: uppercase;
+}
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
