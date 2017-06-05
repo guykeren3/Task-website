@@ -231,6 +231,28 @@ a:active {
   color: lightgrey;
 }
 
+.boxes-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 57%;
+  height: 50%;
+  outline: 1px solid red;
+}
+
+.left-box-container {
+  background-image: url(../assets/trabajo-independiente-box-img.png);
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.right-box-container {
+  background-image: url(../assets/plan-profesionales-box-img.png);
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
 /*HELPERS*/
 
 .caps {
