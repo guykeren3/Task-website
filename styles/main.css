@@ -212,7 +212,7 @@ a:active {
 
 .explanation {
   height: 600px;
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
   border-bottom: 1px solid #BA3D3D;;
   display: flex;
   flex-direction: column;
@@ -283,7 +283,7 @@ a:active {
   margin: 0 0 5%;
 }
 
-a.plan-section-links  {
+a.plan-section-links {
   outline: 1px solid #BA3D3D;
   padding: 1% 10% 2% 2%;
   margin-left: 5%;
@@ -300,28 +300,110 @@ a.plan-section-links  {
 }
 
 .main-footer-container {
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
   height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.left-wrapper-contact {
+  /*outline: 1px solid black;*/
+  width: 50%;
+  padding: 3% 10% 3% 10%;
+  height: 70%;
+  position: relative;
+}
+
+.main-footer-left-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10%;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+  height: 100%;
+}
+
+.main-footer-left-box-img {
+  display: inline-block;
+  transform: scale(.8);
+}
+
+.footer-way-of-contact-left-wrapper {
   display: flex;
   flex-wrap: nowrap;
 }
 
-.left-wrapper-contact {
-  outline: 1px solid black;
+.footer-way-of-contact {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.footer-way-of-contact li {
+  border-bottom: 1px solid lightgrey;
+  vertical-align: middle;
+  position: relative;
+  height: 40%;
+  width: 200px;
+}
+
+.footer-way-of-contact li a {
+  padding-left: 2%;
+  padding-bottom: 3%;
+  padding-top: 1%;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  /*outline: 1px solid red;*/
+}
+
+.footer-way-of-contact li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.footer-way-of-contact li a img {
+  display: inline-block;
+  transform: scale(.6);
+  float: left;
+  padding-right: 5%;
+}
+
+.right-wrapper-location {
+  /*outline: 1px solid black;*/
   width: 50%;
   height: 70%;
 }
 
-.right-wrapper-location {
-  outline: 1px solid black;
-  width: 50%;
-  height: 70%;
+.map-wrapper-footer {
+  padding-bottom: 2%;
+  display: flex;
+}
+
+.map-wrapper-footer span {
+  padding-top: 1%;
+}
+
+.map {
+  width: 80%;
+  height: 80%;
+}
+
+.map-wrapper-footer img {
+  transform: scale(.6);
 }
 
 /*HELPERS*/
 
 .caps {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .clearfix:after {
