@@ -59,7 +59,6 @@ a {
 
 a:link,
 a:visited {
-  color: #3d3d3d;
   font-weight: 300;
 }
 
@@ -227,6 +226,13 @@ a:active {
   /*border-bottom: 1px solid lightgrey;*/
 }
 
+.explanation-paragraph {
+  width: 30%;
+  margin-bottom: 3%;
+  color: cornflowerblue;
+  text-align: center;
+}
+
 .modified-underline {
   color: lightgrey;
 }
@@ -236,21 +242,80 @@ a:active {
   justify-content: space-between;
   width: 57%;
   height: 50%;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .left-box-container {
-  background-image: url(../assets/trabajo-independiente-box-img.png);
   width: 50%;
   height: 100%;
-  background-repeat: no-repeat;
+  background: url(../assets/trabajo-independiente-box-img.png) no-repeat;
+  position: relative;
+  display: flex;
 }
 
 .right-box-container {
-  background-image: url(../assets/plan-profesionales-box-img.png);
   width: 50%;
   height: 100%;
-  background-repeat: no-repeat;
+  background: url(../assets/plan-profesionales-box-img.png) no-repeat;
+  position: relative;
+  display: flex;
+}
+
+.details-link {
+  /*outline: 1px solid #BA3D3D;*/
+  height: 45%;
+  width: 96%;
+  background-color: rgba(250, 250, 250, .7);
+  align-self: flex-end;
+}
+
+.boxes-wrapper h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 2% 0 0 3%;
+  margin: 0 0 2%;
+}
+
+.boxes-wrapper p {
+  font-size: .7rem;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin: 0 0 5%;
+}
+
+a.plan-section-links  {
+  outline: 1px solid #BA3D3D;
+  padding: 1% 10% 2% 2%;
+  margin-left: 5%;
+  position: relative;
+  color: #BA3D3D
+}
+
+.plan-section-links span {
+  position: absolute;
+  top: 3px;
+  right: 15px;
+  font-size: 1.3rem;
+  color: #BA3D3D;
+}
+
+.main-footer-container {
+  outline: 1px solid black;
+  height: 300px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.left-wrapper-contact {
+  outline: 1px solid black;
+  width: 50%;
+  height: 70%;
+}
+
+.right-wrapper-location {
+  outline: 1px solid black;
+  width: 50%;
+  height: 70%;
 }
 
 /*HELPERS*/
