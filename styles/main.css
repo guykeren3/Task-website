@@ -102,24 +102,37 @@ a:active {
   width: 100%;
 }
 
+.location-in-site-links a {
+  background-color: lightgrey;
+  height: 30px;
+  position: relative;
+  padding-left: 5px;
+  padding-top: 5px;
+  width: 100%;
+  color: black;
+  font-weight: 700;
+}
+
+a.location-on-site-link {
+  color: #BA3D3D;
+}
+
 .house-icon {
   transform: scale(.7);
   position: absolute;
   top: 1px;
-  left: 2px;
+  left: -20px;
 }
 
 .main-pic-container {
   position: relative;
   height: 480px;
-  background-image: url(../assets/trabajo-img.png);
-  background-repeat: no-repeat;
+  background: url(../assets/trabajo-img.png) no-repeat;
 }
 
 .main-pic-container h1 {
   color: white;
-  margin: 0;
-  margin-left: 50px;
+  margin: 0 0 0 50px;
   position: absolute;
   left: 100px;
   top: 200px;
@@ -213,7 +226,7 @@ a:active {
 .explanation {
   height: 600px;
   /*outline: 1px solid black;*/
-  border-bottom: 1px solid #BA3D3D;;
+  border-bottom: 1px solid #BA3D3D;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -300,16 +313,15 @@ a.plan-section-links {
 }
 
 .main-footer-container {
-  /*outline: 1px solid black;*/
-  height: 300px;
+  border-bottom: 1px solid lightgrey;
+  height: 280px;
   display: flex;
   justify-content: center;
 }
 
 .left-wrapper-contact {
-  /*outline: 1px solid black;*/
   width: 50%;
-  padding: 3% 10% 3% 10%;
+  padding: 3% 10% 0 10%;
   height: 70%;
   position: relative;
 }
@@ -317,7 +329,6 @@ a.plan-section-links {
 .main-footer-left-box-wrapper {
   display: flex;
   flex-direction: column;
-  padding-bottom: 10%;
   position: absolute;
   top: 20px;
   left: 150px;
@@ -346,13 +357,18 @@ a.plan-section-links {
   border-bottom: 1px solid lightgrey;
   vertical-align: middle;
   position: relative;
-  height: 40%;
+  height: 100%;
   width: 200px;
+  padding-top: 2%;
+}
+
+.footer-way-of-contact li a span {
+  width: 100%;
+  display: block;
 }
 
 .footer-way-of-contact li a {
   padding-left: 2%;
-  padding-bottom: 3%;
   padding-top: 1%;
   height: 100%;
   width: 100%;
@@ -360,14 +376,9 @@ a.plan-section-links {
   /*outline: 1px solid red;*/
 }
 
-.footer-way-of-contact li a:hover {
-  background-color: black;
-  color: white;
-}
-
 .footer-way-of-contact li a img {
   display: inline-block;
-  transform: scale(.6);
+  transform: scale(.8);
   float: left;
   padding-right: 5%;
 }
@@ -388,12 +399,46 @@ a.plan-section-links {
 }
 
 .map {
-  width: 80%;
-  height: 80%;
+  width: 600px;
+  height: 200px;
+}
+
+.map-wrapper-footer {
+  padding-top: 1%;
 }
 
 .map-wrapper-footer img {
   transform: scale(.6);
+}
+
+.social-links {
+  padding: 1% 0 1% 10%;
+}
+
+.social-links img {
+  padding-left: 3%;
+}
+
+.footer {
+  height: 300px;
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: lightgrey;
+}
+
+.footer p {
+  width: 50%;
+}
+
+.footer img {
+  height: 50px;
+  width: 50px;
+
 }
 
 /*HELPERS*/
