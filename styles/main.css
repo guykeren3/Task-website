@@ -267,6 +267,20 @@ a.location-on-site-link {
   position: relative;
 }
 
+.chat-box {
+  width: 160px;
+  height: 100px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -100%;
+}
+
 .chat-window-options li a {
   padding-left: 2%;
   padding-bottom: 8%;
@@ -520,7 +534,49 @@ a.plan-section-links {
 .footer img {
   height: 50px;
   width: 50px;
+}
 
+.go-to-top {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  transform: scale(.7);
+}
+
+.go-to-top a {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.go-to-top a:hover .top {
+  border: 0.5em solid #e74c3c;
+}
+
+a:hover .top:after {
+  border-top: 0.5em solid #e74c3c;
+  border-right: 0.5em solid #e74c3c;
+}
+
+.top {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  border: 0.5em solid #333;
+  border-radius: 50%;
+  margin-right: 0.75em;
+}
+
+.top:after {
+  content: '';
+  display: inline-block;
+  margin-top: 1.4em;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #333;
+  border-right: 0.5em solid #333;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /*HELPERS*/
