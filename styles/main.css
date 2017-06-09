@@ -79,6 +79,13 @@ a:active {
   justify-content: center;
 }
 
+.go-to-top {
+  position: fixed;
+  top: 40px;
+  right: 10px;
+  transform: scale(.7);
+}
+
 .site-logo {
   transform: scale(.7);
   position: absolute;
@@ -534,13 +541,6 @@ a.plan-section-links {
 .footer img {
   height: 50px;
   width: 50px;
-}
-
-.go-to-top {
-  position: absolute;
-  top: 40px;
-  right: 10px;
-  transform: scale(.7);
 }
 
 .go-to-top a {
