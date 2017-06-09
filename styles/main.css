@@ -55,6 +55,7 @@ h4 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:link,
@@ -279,6 +280,11 @@ a.location-on-site-link {
   z-index: 1;
   top: 0;
   left: -100%;
+  display: none;
+}
+
+.countdown {
+  font-size: 1.3rem;
 }
 
 .chat-window-options li a {

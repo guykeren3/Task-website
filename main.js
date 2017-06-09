@@ -61,6 +61,8 @@
 
 //    chat box
 
+const chatBox = document.querySelector('.chat-box');
+
 function chatBoxClickHandler(event) {
 
   const chatBoxParent = document.querySelector('.chat-window-options');
@@ -72,32 +74,30 @@ function chatBoxClickHandler(event) {
     console.info(target);
     console.info(target.textContent);
     if (target.innerText === "Chat") {
-      console.info('boyyyaaa');
+      chatBox.style.display = 'block';
+      chatBoxCountdown();
     }
-
-
-// clicking on the arrow button turns the display ul to = block
-//      if (ulInsideButton.style.display === 'none') {
-//        ulInsideButton.style.display = 'block';
-//      }
-//
-//      else {
-//        ulInsideButton.style.display = 'none';
-//      }
-
   });
+}
+
+function chatBoxCountdown() {
+  let counter = 10;
+  let countdown = setInterval(function () {
+    counter--;
+    document.querySelector(".countdown").textContent = counter;
+    if (counter <= -1) {
+      clearInterval(countdown);
+      chatBox.style.display = 'none';
+    }
+  }, 1000);
 }
 
 chatBoxClickHandler();
 
-const header = document.querySelector('.header');
-console.info(header);
-
-const goToTopBtn = document.querySelector('.go-to-top-link');
-console.info(goToTopBtn);
+const goToTopBtn = $(".go-to-top-button")
 
 function initGoToTopBtn() {
-  $(".go-to-top-button").hide();
+  goToTopBtn.hide();
 }
 
 initGoToTopBtn();
@@ -106,37 +106,20 @@ $(document).ready(function () {
   $(window).scroll(function () {
 
     if ((document.body.scrollTop / document.body.offsetHeight * 100) > 50) {
-      $(".go-to-top-button").show();
+      goToTopBtn.show();
     } else {
       initGoToTopBtn();
     }
   });
 });
 
-$(".go-to-top-button").click(function () {
+goToTopBtn.click(function () {
   $('html,body').animate({
       scrollTop: $(".header").offset().top
     },
     'slow');
 });
 
-
-// function startTimer(duration, display) {
-//   var timer = duration, minutes, seconds;
-//   setInterval(function () {
-//     minutes = parseInt(timer / 60, 10);
-//     seconds = parseInt(timer % 60, 10);
-//
-//     minutes = minutes < 10 ? "0" + minutes : minutes;
-//     seconds = seconds < 10 ? "0" + seconds : seconds;
-//
-//     display.textContent = minutes + ":" + seconds;
-//
-//     if (--timer < 0) {
-//       timer = duration;
-//     }
-//   }, 1000);
-// }
 //
 // window.onload = function () {
 //   var fiveMinutes = 60 * 5,
