@@ -93,29 +93,27 @@ chatBoxClickHandler();
 const header = document.querySelector('.header');
 console.info(header);
 
-const goToTopBtn = document.querySelector('#go-to-top-link');
+const goToTopBtn = document.querySelector('.go-to-top-link');
 console.info(goToTopBtn);
 
 function initGoToTopBtn() {
-  $("#go-to-top-link").hide();
+  $(".go-to-top-button").hide();
 }
 
 initGoToTopBtn();
 
 $(document).ready(function () {
   $(window).scroll(function () {
-    // console.info($("#go-to-top-link").position().top);
-    // if ($("#go-to-top-link").position().top / $("#go-to-top-link").parent().height() * 100 > 10 ) {
-    //   $("#go-to-top-link").show();
-    // }
 
-    const doc = document.documentElement;
-
-    console.info((window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0));
+    if ((document.body.scrollTop / document.body.offsetHeight * 100) > 50) {
+      $(".go-to-top-button").show();
+    } else {
+      initGoToTopBtn();
+    }
   });
 });
 
-$("#go-to-top-link").click(function () {
+$(".go-to-top-button").click(function () {
   $('html,body').animate({
       scrollTop: $(".header").offset().top
     },

@@ -79,13 +79,6 @@ a:active {
   justify-content: center;
 }
 
-.go-to-top {
-  position: fixed;
-  top: 40px;
-  right: 10px;
-  transform: scale(.7);
-}
-
 .site-logo {
   transform: scale(.7);
   position: absolute;
@@ -543,18 +536,11 @@ a.plan-section-links {
   width: 50px;
 }
 
-.go-to-top a {
-  display: inline-block;
-  border-radius: 50%;
-}
-
-.go-to-top a:hover .top {
-  border: 0.5em solid #e74c3c;
-}
-
-a:hover .top:after {
-  border-top: 0.5em solid #e74c3c;
-  border-right: 0.5em solid #e74c3c;
+.go-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  transform: scale(.7);
 }
 
 .top {
@@ -564,6 +550,7 @@ a:hover .top:after {
   border: 0.5em solid #333;
   border-radius: 50%;
   margin-right: 0.75em;
+  cursor: pointer;
 }
 
 .top:after {
@@ -574,8 +561,6 @@ a:hover .top:after {
   height: 1.4em;
   border-top: 0.5em solid #333;
   border-right: 0.5em solid #333;
-  -moz-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
