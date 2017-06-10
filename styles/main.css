@@ -70,10 +70,6 @@ a:active {
   outline: none;
 }
 
-.check-box-hack-menu {
-  display: none;
-}
-
 .header {
   display: flex;
   height: 100px;
@@ -256,9 +252,6 @@ a.location-on-site-link {
   color: #BA3D3D;;
   font-weight: 700;
   font-size: .9rem;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .chat-window-options {
@@ -578,255 +571,13 @@ a.plan-section-links {
 
 /*Media queries*/
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 991px) {
 
   .house-icon {
     transform: scale(.7);
     position: absolute;
     top: 2px;
     left: 0;
-  }
-
-  .check-box-hack-menu {
-    display: block;
-  }
-
-  [type="checkbox"] {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-
-  header label {
-    display: inline-block;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    color: black;
-    transition-property: transform;
-    transition-duration: .4s;
-    transition-delay: .2s;
-    z-index: 100;
-  }
-
-  .contact {
-    margin-right: 5%;
-  }
-
-  header label:hover {
-    color: #F14848;
-    transform: rotateY(360deg);
-  }
-
-  nav.site-nav {
-    display: none;
-  }
-
-  input[type=checkbox]:checked ~ nav.site-nav {
-    display: block;
-    justify-content: space-between;
-    width: 42%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .list-wrapper {
-    position: relative;
-    display: block;
-    outline: 1px solid red;
-    z-index: 10;
-    height: 400vh;
-  }
-
-  ul.site-nav-links-list {
-    display: block;
-    background-color: white;
-    height: 100%;
-    margin-top: 0;
-    padding-top: 10%;
-    font-size: 2rem;
-  }
-
-  ul.site-nav-links-list li {
-    padding-bottom: 15%;
-  }
-
-  ul.site-nav-links-list a {
-    border-bottom: none;
-  }
-
-  .site-nav-links-list a:focus,
-  .site-nav-links-list a:hover,
-  .site-nav-links-list a:active {
-    background-color: white;
-    color: black;
-    outline: none;
-  }
-
-  .site-nav-links-list li:first-child a {
-    padding-left: 5px;
-    border-bottom: none;
-  }
-
-  .chat-window {
-    height: 50vw;
-    width: 20%;
-    background-color: rgba(250, 250, 250, .7);
-    position: absolute;
-    top: 40px;
-    right: 50px;
-  }
-
-  .chat-window-person {
-    display: block;
-    width: 90%;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    transform: scale(.8);
-    padding-left: 10%;
-  }
-
-  span.person-name {
-    position: absolute;
-    top: 170px;
-    left: 35px;
-    font-size: .7rem;
-    width: 100%;
-  }
-
-  .chat-window-options {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-
-  .options-maps-btn {
-    display: flex;
-    background: none;
-    border: 1px solid #BA3D3D;;
-    color: #BA3D3D;;
-    position: absolute;
-    bottom: -15%;
-    right: 15%;
-    cursor: pointer;
-  }
-
-  .explanation-paragraph {
-    width: 70%;
-  }
-
-  .boxes-wrapper {
-    width: 80%;
-  }
-
-  .main-footer-container {
-    border-bottom: 1px solid lightgrey;
-    height: 380px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-
-  .left-wrapper-contact {
-    width: 40%;
-    height: 80%;
-    position: relative;
-    transform: scale(1);
-  }
-
-  .main-footer-left-box-wrapper {
-    position: absolute;
-    top: 60px;
-    left: 0;
-  }
-
-  .right-wrapper-location {
-    transform: scale(.9);
-    padding-top: 2%;
-    padding-left: 3%;
-    width: 40%;
-    height: 70%;
-  }
-
-  .map {
-    width: 450px;
-    height: 200px;
-  }
-
-  .social-links {
-    padding: 1% 0 1% 9%;
-  }
-
-  .social-links img {
-    padding-left: 3%;
-    transform: scale(1.5);
-  }
-
-  .footer p {
-    width: 80%;
-    font-size: 1.4rem;
-  }
-
-  .footer img {
-    height: 50px;
-    width: 50px;
-    transform: scale(1.2);
-  }
-
-  .footer span {
-    padding-top: 2%;
-    font-size: 1.4rem;
-  }
-
-  .go-to-top {
-    outline: 10px solid black;
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    transform: scale(1);
-  }
-
-  .top {
-    display: inline-block;
-    width: 4em;
-    height: 4em;
-    border: 0.5em solid #333;
-    border-radius: 50%;
-    margin-right: 0.75em;
-    cursor: pointer;
-  }
-
-  .top:after {
-    content: '';
-    display: inline-block;
-    margin-top: 1.4em;
-    width: 1.4em;
-    height: 1.4em;
-    border-top: 0.5em solid #333;
-    border-right: 0.5em solid #333;
-    transform: rotate(-45deg);
-  }
-}
-
-@media screen and (max-width: 991px) {
-
-  .house-icon {
-    transform: scale(.7);
-    position: absolute;
-    top: 2px;
-    left: 0;
-  }
-
-
-  .check-box-hack-menu {
-    display: block;
   }
 
   [type="checkbox"] {
@@ -866,7 +617,7 @@ a.plan-section-links {
     display: none;
   }
 
-  input[type=checkbox]:checked nav.site-nav {
+  input[type=checkbox]:checked ~ .site-nav {
     display: block;
     justify-content: space-between;
     height: 100%;
@@ -963,21 +714,18 @@ a.plan-section-links {
     position: relative;
   }
 
+  .person-name {
+    position: absolute;
+    top: -20px;
+    left: 50px;
+    font-size: 1rem;
+  }
+
   .left-wrapper-contact {
     width: 40%;
     height: 80%;
     position: relative;
     transform: scale(1);
-  }
-
-  .person-name-footer {
-    margin: 0 auto;
-    color: #BA3D3D;
-    font-weight: 700;
-    font-size: .9rem;
-    position: absolute;
-    top: -20px;
-    left: 0;
   }
 
   .main-footer-left-box-wrapper {
@@ -1085,22 +833,6 @@ a.plan-section-links {
     right: 100px;
   }
 
-  span.person-name {
-    position: absolute;
-    top: 170px;
-    left: 25px;
-  }
-
-  .person-name-footer {
-    position: absolute;
-    top: -35px;
-    left: 40px;
-    width: 100%;
-    font-size: 1rem;
-    color: #BA3D3D;
-    font-weight: 700;
-  }
-
   .options-maps-btn {
     right: 10%;
   }
@@ -1134,7 +866,7 @@ a.plan-section-links {
 
   .social-links img {
     padding-left: 3%;
-    transform: scale(1.1);
+    transform: scale(1.4);
   }
 
   .footer p {
@@ -1155,11 +887,7 @@ a.plan-section-links {
   }
 }
 
-@media screen and (max-width: 1920px) {
-
-  .check-box-hack-menu {
-    display: none;
-  }
+@media screen and (min-width: 1920px) {
 
   .house-icon {
     transform: scale(.9);
@@ -1188,25 +916,17 @@ a.plan-section-links {
     right: 100px;
   }
 
-  .chat-window-options {
-    bottom: 100px;
-    left: 0;
-    top: 350px;
-    width: 100%;
-  }
-
   .chat-window-person {
     display: block;
     width: 100%;
-    transform: scale(.7);
-    padding-left: 50px;
+    padding-left: 0;
   }
 
-  span.person-name {
-    font-size: 1.2rem;
+  .person-name {
+    font-size: 3rem;
     position: absolute;
-    top: 300px;
-    left: 30px;
+    top: 0;
+    left: 0;
   }
 
   .options-maps-btn {
