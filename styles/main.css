@@ -623,16 +623,17 @@ a.plan-section-links {
     transform: rotateY(360deg);
   }
 
-  nav {
-    height: calc(100vh - 66px);
+  nav.site-nav {
     display: none;
   }
 
-  input[type=checkbox]:checked ~ .site-nav {
+  input[type=checkbox]:checked ~ nav.site-nav {
     display: block;
     justify-content: space-between;
-    height: 100%;
-    width: 100%;
+    width: 42%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .list-wrapper {
