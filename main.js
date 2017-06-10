@@ -77,6 +77,11 @@ function chatBoxClickHandler(event) {
     chatBox.style.display = 'block';
     chatBoxCountdown();
   }
+
+
+  if (target.innerText === 'E-mail') {
+    window.open('mailto:demo@demo.demo');
+  }
 });
 }
 
