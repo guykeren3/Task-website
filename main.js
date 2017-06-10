@@ -71,11 +71,13 @@ function chatBoxClickHandler(event) {
 
   chatBoxParent.addEventListener('click', (e) => {
     const target = e.target;
-  console.info(target);
-  console.info(target.textContent);
   if (target.innerText === "Chat") {
     chatBox.style.display = 'block';
     chatBoxCountdown();
+  }
+  
+  if (target.innerText === 'E-mail') {
+    window.open('mailto:demo@demo.demo');
   }
 });
 }
@@ -94,7 +96,7 @@ function chatBoxCountdown() {
 
 chatBoxClickHandler();
 
-const goToTopBtn = $(".go-to-top-button")
+const goToTopBtn = $(".go-to-top-button");
 
 function initGoToTopBtn() {
   goToTopBtn.hide();
