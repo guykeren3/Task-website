@@ -561,6 +561,10 @@ a.plan-section-links {
 
 /*------------------------*/
 
+/*I tried to make the site responsive by using media quries but had no luck,
+i will leave the section commented out if needed for review or some sort.
+1920 point below*/
+
 /*Media queries*/
 
 /*@media screen and (min-width: 767px) {*/
