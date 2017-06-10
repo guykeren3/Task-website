@@ -815,7 +815,7 @@ a.plan-section-links {
   }
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (max-width: 991px) {
 
   .house-icon {
     transform: scale(.7);
@@ -1155,7 +1155,7 @@ a.plan-section-links {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 1920px) {
 
   .check-box-hack-menu {
     display: none;
@@ -1199,8 +1199,7 @@ a.plan-section-links {
     display: block;
     width: 100%;
     transform: scale(.7);
-    padding-left: 0;
-    padding-bottom: 100px;
+    padding-left: 50px;
   }
 
   span.person-name {
@@ -1282,7 +1281,7 @@ a.plan-section-links {
   }
 
   .social-links {
-    padding: 1% 0 1% 15%;
+    padding: 1% 0 1% 6%;
   }
 
   .social-links img {
