@@ -70,6 +70,10 @@ a:active {
   outline: none;
 }
 
+.check-box-hack-menu {
+  display: none;
+}
+
 .header {
   display: flex;
   height: 100px;
@@ -252,6 +256,9 @@ a.location-on-site-link {
   color: #BA3D3D;;
   font-weight: 700;
   font-size: .9rem;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .chat-window-options {
@@ -580,6 +587,10 @@ a.plan-section-links {
     left: 0;
   }
 
+  .check-box-hack-menu {
+    display: block;
+  }
+
   [type="checkbox"] {
     border: 0;
     clip: rect(0 0 0 0);
@@ -681,11 +692,12 @@ a.plan-section-links {
     padding-left: 10%;
   }
 
-  .person-name {
+  span.person-name {
     position: absolute;
-    top: 165px;
+    top: 170px;
     left: 35px;
     font-size: .7rem;
+    width: 100%;
   }
 
   .chat-window-options {
@@ -801,13 +813,18 @@ a.plan-section-links {
   }
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (max-width: 991px) {
 
   .house-icon {
     transform: scale(.7);
     position: absolute;
     top: 2px;
     left: 0;
+  }
+
+
+  .check-box-hack-menu {
+    display: block;
   }
 
   [type="checkbox"] {
@@ -847,7 +864,7 @@ a.plan-section-links {
     display: none;
   }
 
-  input[type=checkbox]:checked ~ .site-nav {
+  input[type=checkbox]:checked nav.site-nav {
     display: block;
     justify-content: space-between;
     height: 100%;
@@ -944,18 +961,21 @@ a.plan-section-links {
     position: relative;
   }
 
-  .person-name {
-    position: absolute;
-    top: -20px;
-    left: 50px;
-    font-size: 1rem;
-  }
-
   .left-wrapper-contact {
     width: 40%;
     height: 80%;
     position: relative;
     transform: scale(1);
+  }
+
+  .person-name-footer {
+    margin: 0 auto;
+    color: #BA3D3D;
+    font-weight: 700;
+    font-size: .9rem;
+    position: absolute;
+    top: -20px;
+    left: 0;
   }
 
   .main-footer-left-box-wrapper {
@@ -1062,6 +1082,22 @@ a.plan-section-links {
     right: 100px;
   }
 
+  span.person-name {
+    position: absolute;
+    top: 170px;
+    left: 25px;
+  }
+
+  .person-name-footer {
+    position: absolute;
+    top: -35px;
+    left: 40px;
+    width: 100%;
+    font-size: 1rem;
+    color: #BA3D3D;
+    font-weight: 700;
+  }
+
   .options-maps-btn {
     right: 10%;
   }
@@ -1095,7 +1131,7 @@ a.plan-section-links {
 
   .social-links img {
     padding-left: 3%;
-    transform: scale(1.4);
+    transform: scale(1.1);
   }
 
   .footer p {
@@ -1117,6 +1153,10 @@ a.plan-section-links {
 }
 
 @media screen and (min-width: 1920px) {
+
+  .check-box-hack-menu {
+    display: none;
+  }
 
   .house-icon {
     transform: scale(.9);
@@ -1145,17 +1185,25 @@ a.plan-section-links {
     right: 100px;
   }
 
+  .chat-window-options {
+    bottom: 100px;
+    left: 0;
+    top: 350px;
+    width: 100%;
+  }
+
   .chat-window-person {
     display: block;
     width: 100%;
-    padding-left: 0;
+    transform: scale(.7);
+    padding-left: 50px;
   }
 
-  .person-name {
-    font-size: 3rem;
+  span.person-name {
+    font-size: 1.2rem;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 300px;
+    left: 30px;
   }
 
   .options-maps-btn {

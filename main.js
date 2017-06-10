@@ -75,11 +75,6 @@ function chatBoxClickHandler(event) {
     chatBox.style.display = 'block';
     chatBoxCountdown();
   }
-
-  if (target.innerText !== Number.isInteger(target.innerText)) {
-    const phoneNumber = target.innerText;
-    window.open(phoneNumber);
-  }
   
   if (target.innerText === 'E-mail') {
     window.open('mailto:demo@demo.demo');
